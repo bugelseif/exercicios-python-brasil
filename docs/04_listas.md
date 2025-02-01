@@ -39,7 +39,7 @@ Faça um programa que leia 20 números inteiros e armazene-os num vetor. Armazen
 === "Código"
 	```pyodide
 	```
-	
+
 === "Resposta:"
 	```pyodide
 	numeros = []
@@ -66,6 +66,24 @@ Faça um programa que peça as quatro notas de 10 alunos, calcule e armazene num
 
 === "Código"
 	```pyodide
+	```
+
+=== "Resposta"
+	```pyodide
+	lista_de_notas= []
+	lista_de_medias=[]
+	numero_de_alunos=0
+
+	for index in range (10):
+		for index in range(4):
+			nota= float (input(f"nota {index+1}\n" ))
+			lista_de_notas.append(nota)
+		lista_de_medias.append(sum(lista_de_notas)/4)
+		lista_de_notas.clear()
+	for media in lista_de_medias:
+		if media >=7.00:
+			numero_de_alunos= numero_de_alunos+1
+	print(numero_de_alunos) 
 	```
 
 #### Exercício 07
